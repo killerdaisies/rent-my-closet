@@ -1,5 +1,12 @@
 <!--pages/landing/landing.wxml-->
-<div class="main-container">
+<view class="text-area-wrap">
+<textarea value="{{search}}" style="input-size"placeholder=" Search..." name="search" />
+</view>
+
+  <view class= "screenshot" style="background-image: url('../images/screenshot.png');">
+  </view>
+
+<!-- <div class="main-container">
   <div>
     <button bindtap="indexDresses">
       <image src="../images/dress_1.png"></image>
@@ -30,5 +37,4 @@
       <image src="../images/dress_6.png"></image>
     </button>
   </div>
-</div>
-
+</div> -->
