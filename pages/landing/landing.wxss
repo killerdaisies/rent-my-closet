@@ -1,16 +1,28 @@
 /* pages/landing/landing.wxss */
-.button {
+/* .button {
   height: 50px;
   width:  50px;
-}
+} */
 
-.main-container {
+/* .main-container {
   display: flex;
-}
+} */
 
-#map {
+/* #map {
   flex: 0 0 450px;
   height: 100vh;
   position: sticky 
   top: 0;
+} */
+
+.screenshot {
+  background-size: cover !important;
+  height: 400px;
+  width: 90%;
+  margin-left: 22px;
 }
+
+.text-area-wrap {
+  
+}
+
