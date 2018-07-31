@@ -7,8 +7,8 @@
     <image src="https://www.walldevil.com/wallpapers/a84/woman-dress.jpg"></image>
   </view>
 </view>
-<!-- 
-<view wx:for="{{restaurants}}" wx:for-item="restaurant" wx:key="restaurant.id" bindtap="showRestaurant" class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('{{restaurant.image}}');" data-restaurant="{{restaurant}}">
+
+<view wx:for="{{items}}" wx:for-item="restaurant" wx:key="restaurant.id" bindtap="showRestaurant" class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('{{restaurant.image}}');" data-restaurant="{{restaurant}}">
 
   <view class="card-category">
     <text>dress</text>
@@ -25,6 +25,6 @@
     </view>
 
   </view>
-</view> -->
+</view>
 
 
