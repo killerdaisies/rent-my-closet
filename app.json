@@ -7,5 +7,23 @@
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "WeChat",
     "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "backgroundColor": "#32AAE1",
+    "selectedColor": "white",
+    "borderStyle": "black",
+    "color": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "pages/images/dress_1.png",
+        "selectedIconPath": "pages/images/dress_1.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "pages/images/dress_2.png",
+        "selectedIconPath": "pages/images/dress_2.png"
+      }
+    ]
   }
 }
