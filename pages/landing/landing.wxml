@@ -1,0 +1,34 @@
+<!--pages/landing/landing.wxml-->
+<div class="main-container">
+  <div>
+    <button bindtap="indexDresses">
+      <image src="../images/dress_1.png"></image>
+    </button>
+  </div>
+  <div>
+    <button bindtap="indexDresses">
+      <image src="../images/dress_2.png"></image>
+    </button>
+  </div>
+  <div>
+    <button bindtap="indexDresses">
+      <image src="../images/dress_3.png"></image>
+      </button>
+  </div>
+  <div>
+    <button bindtap="indexDresses">
+      <image src="../images/dress_4.png"></image>
+    </button>
+  </div>
+  <div>
+    <button bindtap="indexDresses">
+      <image src="../images/dress_5.png"></image>
+    </button>
+  </div>
+  <div>
+    <button bindtap="indexDresses">
+      <image src="../images/dress_6.png"></image>
+    </button>
+  </div>
+</div>
+
