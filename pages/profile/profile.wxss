@@ -1,5 +1,81 @@
 /* pages/profile/profile.wxss */
-.add-avatar {
+.profile {
+  width: 100%;
+  height: 175px;
+  position: relative;
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+}
+
+
+.avatar-image {
+  top: 5%;
+  left: 5%;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+}
+
+
+.name {
+  font-size: 20px;
+  font-weight: bold;
+  top: 5%;
+  right: 10%;
+  height: 30px;
+  width: 150px;
+  position: absolute;
+}
+
+.wechat-id {
+  font-size: 15px;
+  top: 20%;
+  right: 15%;
+  position: absolute;
+}
+
+.edit-button {
+  color: grey;
+  top: 40%;
+  right: 20%;
+  position: absolute;
+  padding: 5px 10px;
+  border: solid 1px;
+  border-radius: 50px;
+  opacity: .9;
+
+}
+
+.description {
+  align-items: center;
+  font-size: 12px;
+  top: 65%;
+  right: 5%;
+  left: 10%;
+  position: absolute;
+}
+
+.rentals {
+  border: solid red;
+  height: 200px;
+}
+
+.my-rentals {
+  font-weight: bold;
+  left: 20px;
+  top: 10px;
+  position: relative;
+}
+
+.rented {
+  border: solid red;
+  height: 200px;
+}
+
+.my-rented {
+  font-weight: bold;
+  left: 20px;
+  top: 10px;
+  position: relative;
 }
