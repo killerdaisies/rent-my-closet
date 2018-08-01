@@ -33,10 +33,10 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 5,
+			"current": 0,
 			"list": [
 				{
-					"id": -1,
+					"id": 0,
 					"name": "Landing",
 					"pathName": "pages/landing/landing",
 					"query": ""
