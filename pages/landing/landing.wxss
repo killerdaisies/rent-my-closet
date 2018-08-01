@@ -22,7 +22,10 @@
   margin-left: 22px;
 }
 
-.text-area-wrap {
-  
+.searchbar {
+  background-size: cover !important;
+  height: 120px;
+  width: 275px;
+  margin-left: 55px;
+  margin-top: 20px;
 }
-
