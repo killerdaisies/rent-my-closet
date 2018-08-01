@@ -44,7 +44,6 @@
   border: solid 1px;
   border-radius: 50px;
   opacity: .9;
-
 }
 
 .description {
@@ -57,7 +56,6 @@
 }
 
 .rentals {
-  border: solid red;
   height: 200px;
 }
 
@@ -69,7 +67,6 @@
 }
 
 .rented {
-  border: solid red;
   height: 200px;
 }
 
