@@ -36,7 +36,7 @@
 			"current": -1,
 			"list": [
 				{
-					"id": -1,
+					"id": 0,
 					"name": "Landing",
 					"pathName": "pages/landing/landing",
 					"query": ""
@@ -57,6 +57,18 @@
 					"id": -1,
 					"name": "Profile",
 					"pathName": "pages/profile/profile",
+					"query": ""
+				},
+				{
+					"id": 4,
+					"name": "Show",
+					"pathName": "pages/show/show",
+					"query": ""
+				},
+				{
+					"id": 5,
+					"name": "Login",
+					"pathName": "pages/login/login",
 					"query": ""
 				},
 				{
