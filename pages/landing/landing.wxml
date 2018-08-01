@@ -1,10 +1,13 @@
 <!--pages/landing/landing.wxml-->
-<view class="text-area-wrap">
+<!-- <view class="text-area-wrap">
 <textarea value="{{search}}" style="input-size"placeholder=" Search..." name="search" />
+</view> -->
+
+<view class= "searchbar" style="background-image: url('../images/searchbar.png');">
 </view>
 
-  <view class= "screenshot" style="background-image: url('../images/screenshot.png');">
-  </view>
+<view class= "screenshot" style="background-image: url('../images/screenshot.png');">
+</view>
 
 <!-- <div class="main-container">
   <div>
