@@ -1,6 +1,6 @@
 <!--pages/show/show.wxml-->
 <view class="page-container">
-  <image class="main-image" src="../images/camera.png"></image>
+  <image class="main-image" src="../images/avatar.png"></image>
   <view class="price-box">
     <text>¥80/Day</text>
   </view>
