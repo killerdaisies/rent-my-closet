@@ -7,10 +7,8 @@
 }
 /* Avatar */
 .userinfo-avatar {
-  width:320rpx;
-  height:320rpx;
-  margin:20rpx;
-  border-radius:100%;
+  width: 430px;
+  height: 410px;
 }
 
 /* form style */
@@ -38,6 +36,6 @@ textarea {
 }
 
 .add-avatar {
-  display: flex;
-  justify-content: space-around;
+  position: relative;
+  right: 30px;
 }
