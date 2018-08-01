@@ -1,30 +1,24 @@
-<view class="page-container"> 
+<view class="page-container">
   <view class="search-bar">
-  <input type="text" placeholder='Search'></input>
-  </view>
-  <view class = "banner"> 
-    <text>dress</text>
-    <image src="https://www.walldevil.com/wallpapers/a84/woman-dress.jpg"></image>
+    <input type="text" placeholder='Search'></input>
   </view>
 </view>
-<!-- 
-<view wx:for="{{restaurants}}" wx:for-item="restaurant" wx:key="restaurant.id" bindtap="showRestaurant" class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('{{restaurant.image}}');" data-restaurant="{{restaurant}}">
 
-  <view class="card-category">
-    <text>dress</text>
-  </view>
+<view wx:for="{{items}}" wx:for-item="item" wx:key="item.id" bindtap="showItem" class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('http://www.walldevil.com/wallpapers/a84/woman-dress.jpg'); "data-item= "{{item}}">
 
-  <view class="card-description">
+ <view class="card-category">
+   {{item.category}} 
+ </view> 
 
-    <view class="name">
-       <text>description</text>
-    </view>
+ <view class="card-mainInfo">
 
-    <view class="tag">
-       <text>somthing</text>
-    </view>
+   <view class="name">
+      {{item.name}}
+   </view>
 
-  </view>
-</view> -->
+   <view class="price">
+      {{item.price}} RMB/DAY
+   </view>
 
-
+ </view>
+</view>
