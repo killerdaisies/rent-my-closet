@@ -2,7 +2,6 @@
   "pages":[
     "pages/index/index",
     "pages/landing/landing",
-    "pages/logs/logs",
     "pages/add/add",
     "pages/profile/profile",
     "pages/show/show"
@@ -25,9 +24,14 @@
         "selectedIconPath": "pages/images/add.png"
       },
       {
-        "pagePath": "pages/landing/landing",
+        "pagePath": "pages/profile/profile",
         "iconPath": "pages/images/profile.png",
         "selectedIconPath": "pages/images/profile.png"
+      },
+      {
+        "pagePath": "pages/landing/landing",
+        "iconPath": "pages/images/landing.png",
+        "selectedIconPath": "pages/images/landing.png"
       }
     ]
   }
