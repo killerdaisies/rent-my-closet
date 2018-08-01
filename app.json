@@ -1,6 +1,10 @@
 {
   "pages":[
-    "pages/index/index"
+    "pages/index/index",
+    "pages/landing/landing",
+    "pages/logs/logs",
+    "pages/add/add",
+    "pages/profile/profile"
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -9,20 +13,20 @@
     "navigationBarTextStyle":"black"
   },
   "tabBar": {
-    "backgroundColor": "#32AAE1",
-    "selectedColor": "white",
-    "borderStyle": "black",
-    "color": "black",
-    "list": [
-      {
+    "list": [{
         "pagePath": "pages/index/index",
-        "iconPath": "pages/images/dress_1.png",
-        "selectedIconPath": "pages/images/dress_1.png"
+        "iconPath": "pages/images/heart.png",
+        "selectedIconPath": "pages/images/heart.png"
       },
       {
-        "pagePath": "pages/index/index",
-        "iconPath": "pages/images/dress_2.png",
-        "selectedIconPath": "pages/images/dress_2.png"
+        "pagePath": "pages/add/add",
+        "iconPath": "pages/images/add.png",
+        "selectedIconPath": "pages/images/add.png"
+      },
+      {
+        "pagePath": "pages/landing/landing",
+        "iconPath": "pages/images/profile.png",
+        "selectedIconPath": "pages/images/profile.png"
       }
     ]
   }
