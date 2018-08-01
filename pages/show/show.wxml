@@ -2,14 +2,14 @@
 <view class="page-container">
   <image class="main-image" src="../images/avatar.png"></image>
   <view class="price-box">
-    <text>¥80/Day</text>
+    <text>¥{{price}}/Day</text>
   </view>
 </view>
 
 <view class="card-container">
 <view class="title-card">
   <view class="title-text">
-  <text>Vera Wang Summer Floral Print Dress</text>
+  <text>{{name}}</text>
   </view>
 </view>
   <view class="avatar">
@@ -23,8 +23,7 @@
 <view class= "description-box">
   <view class="description">
     <text>
-    Vera Wang summer floral print dress from with flat-neck collar and neckline   with tie. Short ruffled sleeves. Elastic waistband. Ruffled A-line silhouette.
-
+      {{description}}
     </text>
     <text>My HEIGHT: 168 cm</text>
   </view>
@@ -43,7 +42,8 @@
 
 <view>
   <view class="label">Category</view>
-  <view class="text-area"></view>
+  <view class="text-area">
+  </view>
 </view>
 
 <view>
