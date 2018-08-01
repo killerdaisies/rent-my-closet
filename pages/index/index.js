@@ -1,16 +1,7 @@
+//index.js
 const app = getApp()
 
 Page({
-  // data: {
-
-  // },
-
-  // bindViewTap: function () {
-  //   wx.navigateTo({
-  //     url: '../logs/logs'
-  //   })
-  // },
-
   onLoad: function (options) {
     let page = this;
     wx.request({
@@ -18,11 +9,20 @@ Page({
       method: 'GET',
       success(res) {
         const items = res.data.items;
-        page.setData ({
+        page.setData({
           items: items
         });
         wx.hideToast();
       }
+    });
+    this.setData(app.globalData)
+  },
+  showItem(e) {
+    const data = e.currentTarget.dataset;
+    const item = data.item;
+
+    wx.navigateTo({
+      url: `../show/show?id=${item.id}`
     });
   }
 });
