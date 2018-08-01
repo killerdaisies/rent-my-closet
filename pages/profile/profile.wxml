@@ -1,6 +1,37 @@
 <!--pages/profile/profile.wxml-->
-  <view class="add-avatar">
-  <image class="userinfo-avatar" src= "../images/Avatar.png"></image>
+<view>
+  <view class='profile'>
+    <view>
+      <image class="avatar-image" src= "../images/jane.png"></image>
+      <view class= "name"> Jane Gong </view>
+      <view class= "wechat-id">Wechat ID: killerdaises </view>
+      <view class= "edit-button"> Edit Profile </view>
+      <view class="description">
+        A dance loving affecionado suffering from chronic wanderlust only to find solace in social entrepreneurship. Singapore for life!
+      </view>
+    </view>
   </view>
+</view>
 
-  
+<view>
+  <view class="rentals">
+    <view class= "my-rentals"> My Rentals </view>
+        <view class="card-category">
+          {{dress.name}}
+        </view>
+        <view class="card-description">
+          <view class="price">
+            {{dress.price}}
+          </view>
+          <view class="tag">
+            {{dress.description}}
+          </view>
+        </view>
+  </view>
+</view>
+
+<view>
+  <view class="rented">
+    <view class= "my-rented"> My Rented </view>
+  </view>
+</view>

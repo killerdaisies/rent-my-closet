@@ -1,8 +1,12 @@
 <!--pages/add/add.wxml-->
-  <view class="add-avatar">
+<template name="form">
+<view class="add-avatar">
   <image class="userinfo-avatar" src= "../images/avatar.png"></image>
+    <view class= "add-button"> Add a photo
+    <image class= "camera" src="../images/camera.png"></image>
+    </view>
   </view>
-
+  <form bindsubmit="bindSubmit">
     <view class="user-input">
       <view class="text-area-wrap">
       <textarea value="{{name}}" style="input-size"placeholder="Name" class="input-height" name="name" maxlength="-1" auto-height />
@@ -17,23 +21,24 @@
 
     <view class="user-input">
       <view class="text-area-wrap">
-      <textarea value="{{address}}" style="input-size"placeholder="Price" class="input-height" name="address" maxlength="-1" auto-height />
+      <textarea value="{{price}}" style="input-size"placeholder="Price" class="input-height" name="price" maxlength="-1" auto-height />
       </view>
     </view>
 
     <view class="user-input">
       <view class="text-area-wrap">
-      <textarea value="{{image}}" style="input-size"placeholder="Size" class="input-height" name="image" maxlength="-1" auto-height />
+      <textarea value="{{sizing}}" style="input-size"placeholder="Size" class="input-height" name="size" maxlength="-1" auto-height />
       </view>
     </view>
 
     <view class="user-input">
       <view class="text-area-wrap">
-      <textarea value="{{address}}" style="input-size"placeholder="Category" class="input-height" name="address" maxlength="-1" auto-height />
+      <textarea value="{{category}}" style="input-size"placeholder="Category" class="input-height" name="category" maxlength="-1" auto-height />
       </view>
     </view>
 
     <button  style=" margin-top:20px margin-bottom:50px "type="primary" form-type="submit" loading="{{loading}}">Submit</button>
+    </form>
+</template>
 
-
-
+<template is="form"/>

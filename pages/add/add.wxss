@@ -1,7 +1,7 @@
 /* pages/add/add.wxss */
 .h2-header {
  color: black;
-  font-size: 50rpx; 
+  font-size: 50rpx;
   font-weight: bold;
   padding: 10px;
 }
@@ -36,6 +36,28 @@ textarea {
 }
 
 .add-avatar {
-  position: relative;
-  right: 30px;
+  background-color: grey;
+  height: 250px;
 }
+
+.add-button {
+  background-color: white;
+  color: grey;
+  padding: 5px 15px;
+  border: solid 1px;
+  border-radius: 50px;
+  opacity: .9;
+  left: 28%;
+  top: 40%;
+  position: relative;
+  width: 38%;
+}
+
+.camera {
+  width: 20px;
+  height: 20px;
+  top: 3px;
+  left: 5px;
+  position: relative;
+}
+
