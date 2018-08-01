@@ -7,15 +7,49 @@
 </view>
 
 <view class="card-container">
+<view class="title-card">
   <view class="title-text">
   <text>Vera Wang Summer Floral Print Dress</text>
   </view>
-  <view class="person">
-    <text>Vivian Wu</text>
+</view>
+  <view class="avatar">
+    <image class="avatar-image" src="../images/victoria.jpeg"></image>
+    <view class="avatar-name">
+      <text>Vivian Wu</text>
+    </view>
   </view>
+
+  
+<view class= "description-box">
   <view class="description">
     <text>
     Vera Wang summer floral print dress from with flat-neck collar and neckline   with tie. Short ruffled sleeves. Elastic waistband. Ruffled A-line silhouette.
+
     </text>
+    <text>My HEIGHT: 168 cm</text>
   </view>
 </view>
+
+</view>
+
+<view class="features">
+  <view class="avaliability">
+  <text>Avaliability</text>
+  </view>
+  <view class="calendar-box" >
+    <image class="calendar" src="../images/calendar.png"></image>
+  </view>
+</view>
+
+<view>
+  <view class="label">Category</view>
+  <view class="text-area"></view>
+</view>
+
+<view>
+  <view class="label"> Size </view>
+  <view class="text-area">
+  </view>
+</view>
+
+    <button  style=" margin-top:20px margin-bottom:50px "type="primary" form-type="submit" loading="{{loading}}">Reserve</button>
