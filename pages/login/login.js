@@ -7,6 +7,10 @@ Page({
     this.setData({
       userInfo: e.detail.userInfo
     })
+
+    wx.reLaunch({
+      url: '../../pages/landing/landing',
+    })
   }
 })
 
