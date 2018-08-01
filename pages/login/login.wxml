@@ -11,3 +11,4 @@
     <button open-type="getUserInfo" bindgetuserinfo="getUserInfo">Login</button>
   </view>
 </view>
+
