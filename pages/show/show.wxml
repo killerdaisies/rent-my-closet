@@ -22,9 +22,7 @@
   
 <view class= "description-box">
   <view class="description">
-    <text>
-      {{description}}
-    </text>
+    <text>{{description}}</text>
     <text>My HEIGHT: 168 cm</text>
   </view>
 </view>
