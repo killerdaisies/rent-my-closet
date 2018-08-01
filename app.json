@@ -27,6 +27,11 @@
         "pagePath": "pages/landing/landing",
         "iconPath": "pages/images/profile.png",
         "selectedIconPath": "pages/images/profile.png"
+      },
+      {
+        "pagePath": "pages/landing/landing",
+        "iconPath": "pages/images/landing.png",
+        "selectedIconPath": "pages/images/landing.png"
       }
     ]
   }
