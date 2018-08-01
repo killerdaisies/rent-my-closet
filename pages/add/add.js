@@ -40,14 +40,6 @@ Page({
         });
       }
     });
-
-    // items.push(item);
-
-    // set data on index page and show
-    // wx.navigateTo({
-    //   url: '/pages/index/index'
-    // });
-
   },
 
   onLoad: function () {
