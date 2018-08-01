@@ -23,35 +23,6 @@ App({
               console.log(11, res1)
               // wx.getUserInfo({
               //   success: function (res2) {
-
-              //     page.globalData.userInfo = res2.userInfo
-              //     wx.request({
-              //       url: `http://localhost:3000/api/v1/users/${res1.data.userId}`,
-              //       method: 'put',
-              //       data: {
-              //         name: res2.userInfo.nickName,
-              //         gender: res2.userInfo.gender,
-              //         avatarUrl: res2.userInfo.avatarUrl
-              //       },
-              //       success: function (res) {
-              //         // set data on index page and show
-              //         // wx.redirectTo({
-              //         //   url: '/pages/main/main'
-              //         // });
-              //         wx.setStorageSync('currentUser', res.data)
-              //       }
-              //       // insert next code here
-              //     })
-              //   },
-              // })
-
-            }
-          })
-        }
-      }
-    })
-
-  }, 
-
+  },
   globalData: {}
 })

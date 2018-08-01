@@ -2,7 +2,7 @@
 var app = getApp()
 Page({
   data: {
-    loading: false,
+    loading: false
   },
 
   bindSubmit: function (e) {
@@ -32,11 +32,11 @@ Page({
       url: `http://localhost:3000/api/v1/items`,
       method: 'POST',
       data: item,
-      success() {
+      success: function(res) {
         // set data on index page and show
         console.log("he");
         wx.redirectTo({
-          url: '/pages/show/show'
+          url: '/pages/show/show?id=' + res.data.id
         });
       }
     });

@@ -1,6 +1,6 @@
+var app = getApp()
 Page({
   onLoad: function (options) {
-
     let that = this;
 
     wx.request({
