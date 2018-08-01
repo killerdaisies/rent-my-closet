@@ -19,6 +19,5 @@
    <view class="price">
       {{item.price}} RMB/DAY
    </view>
-
  </view>
 </view>

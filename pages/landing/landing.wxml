@@ -1,0 +1,43 @@
+<!--pages/landing/landing.wxml-->
+<!-- <view class="text-area-wrap">
+<textarea value="{{search}}" style="input-size"placeholder=" Search..." name="search" />
+</view> -->
+
+<view class= "searchbar" style="background-image: url('../images/searchbar.png');">
+</view>
+
+<view class= "screenshot" style="background-image: url('../images/screenshot.png');">
+</view>
+
+<!-- <div class="main-container">
+  <div>
+    <button bindtap="indexDresses">
+      <image src="../images/dress_1.png"></image>
+    </button>
+  </div>
+  <div>
+    <button bindtap="indexDresses">
+      <image src="../images/dress_2.png"></image>
+    </button>
+  </div>
+  <div>
+    <button bindtap="indexDresses">
+      <image src="../images/dress_3.png"></image>
+      </button>
+  </div>
+  <div>
+    <button bindtap="indexDresses">
+      <image src="../images/dress_4.png"></image>
+    </button>
+  </div>
+  <div>
+    <button bindtap="indexDresses">
+      <image src="../images/dress_5.png"></image>
+    </button>
+  </div>
+  <div>
+    <button bindtap="indexDresses">
+      <image src="../images/dress_6.png"></image>
+    </button>
+  </div>
+</div> -->

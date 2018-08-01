@@ -1,0 +1,6 @@
+<!--pages/profile/profile.wxml-->
+  <view class="add-avatar">
+  <image class="userinfo-avatar" src= "../images/Avatar.png"></image>
+  </view>
+
+  
