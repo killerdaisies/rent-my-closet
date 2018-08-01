@@ -2,8 +2,8 @@
 
 App({
   onLaunch: function () {
-    // const host = 'https://rent-my-closet.herokuapp.com/'
-    const host = "http://localhost:3000/"
+    const host = 'https://rent-my-closet.herokuapp.com/'
+    // const host = "http://localhost:3000/"
     // const host = 'https://localhost.3000(what is your address)/'
     wx.login({
       success: (res) => {
@@ -50,27 +50,8 @@ App({
         }
       }
     })
-  }
-    // const host = 'http://localhost:3000/'
-    // console.log('processing to login')
-    // wx.login({
-    //   success: (res) => {
-    //     console.log(res)
-    //     // insert next code here
-    //     wx.request({
-    //       url: host + 'api/v1/login',
-    //       method: 'POST',
-    //       data: {
-    //         code: res.code
-    //       },
-    //       // insert next code here
-    //       success: (res) => {
-    //         console.log(res)
-    //         this.globalData.userId = res.data.userId
-    //       }
-    //     })
-    //   }
-    // })
-  },
+
+  }, 
+
   globalData: {}
 })
