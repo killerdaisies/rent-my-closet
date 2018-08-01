@@ -8,7 +8,7 @@
   </view>
   <view class="usermotto">
     <text class="user-motto">{{motto}}</text>
-    <button open-type="getUserInfo" bindgetuserinfo="getUserInfo">Login</button>
+    <button open-type="getUserInfo" bindgetuserinfo="getUserInfo" >Login</button>
   </view>
 </view>
 

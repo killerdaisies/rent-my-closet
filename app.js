@@ -1,5 +1,4 @@
 //app.js
-
 App({
   onLaunch: function () {
     const host = 'https://rent-my-closet.herokuapp.com/'
@@ -8,7 +7,7 @@ App({
     wx.login({
       success: (res) => {
         console.log(res)
-        let currentUser = wx.getStorageSync('currentUser') 
+        let currentUser = wx.getStorageSync('currentUser')
         if (!currentUser) {
           wx.request({
             url: host + 'api/v1/login',
@@ -23,6 +22,11 @@ App({
               console.log(11, res1)
               // wx.getUserInfo({
               //   success: function (res2) {
+            }
+          })
+        }
+      }
+    })
   },
   globalData: {}
 })
