@@ -1,43 +1,48 @@
 <!--pages/landing/landing.wxml-->
-<!-- <view class="text-area-wrap">
-<textarea value="{{search}}" style="input-size"placeholder=" Search..." name="search" />
-</view> -->
-
-<view class= "searchbar" style="background-image: url('../images/searchbar.png');">
+<view class="search-bar">
+<input confirm-type="search" type="text" value="{{search}}" style="input-size"placeholder=" Search..." name="search" maxlength="-1" bindconfirm="search"/>
 </view>
 
-<view class= "screenshot" style="background-image: url('../images/screenshot.png');">
-</view>
-
-<!-- <div class="main-container">
-  <div>
-    <button bindtap="indexDresses">
-      <image src="../images/dress_1.png"></image>
+<view class="main-container">
+  <view class="button">
+    <button bindtap="searchDress" data-category="maxi" hover-class="none" plain='true'>
+      <image class = "image" src="../images/dress_1.png"></image>
+      <view class= "button-text"> Maxi </view>
     </button>
-  </div>
-  <div>
-    <button bindtap="indexDresses">
-      <image src="../images/dress_2.png"></image>
+  </view>
+  <view class="button">
+    <button bindtap="searchDress" data-category="formal" hover-class="none" plain='true'>
+      <image class = "image" src="../images/dress_2.png"></image>
+      <view class= "button-text"> Formal </view>
     </button>
-  </div>
-  <div>
-    <button bindtap="indexDresses">
-      <image src="../images/dress_3.png"></image>
+  </view>
+  <view class="button">
+    <button bindtap="searchDress" data-category="cocktail" hover-class="none" plain='true'>
+      <image class = "image" src="../images/dress_3.png"></image>
+      <view class= "button-text"> Cocktail </view>
       </button>
-  </div>
-  <div>
-    <button bindtap="indexDresses">
-      <image src="../images/dress_4.png"></image>
+  </view>
+</view>
+
+<view class="main-container-2">
+  <view class="button">
+    <button bindtap="searchDress('maxi')" data-category="summer" hover-class="none" plain='true'>
+      <image class = "image" src="../images/dress_4.png"></image>
+      <view class= "button-text"> Summer </view>
     </button>
-  </div>
-  <div>
-    <button bindtap="indexDresses">
-      <image src="../images/dress_5.png"></image>
+  </view>
+  <view class="button">
+    <button bindtap="searchDress('maxi')" data-category="casual" hover-class="none" plain='true'>
+      <image class = "image" src="../images/dress_5.png"></image>
+      <view class= "button-text"> Casual </view>
     </button>
-  </div>
-  <div>
-    <button bindtap="indexDresses">
-      <image src="../images/dress_6.png"></image>
+  </view>
+  <view class="button">
+    <button bindtap="searchDress('maxi')" data-category="social" hover-class="none" plain='true'>
+      <image class = "image" src="../images/dress_6.png"></image>
+      <view class= "button-text"> Social </view>
     </button>
-  </div>
-</div> -->
+  </view>
+</view>
+
+

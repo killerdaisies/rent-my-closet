@@ -38,6 +38,7 @@ Page({
       url: `http://localhost:3000/api/v1/items`,
       method: 'POST',
       data: item,
+
       success: function(res) {
         // set data on index page and show
         console.log("he");

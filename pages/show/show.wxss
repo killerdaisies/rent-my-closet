@@ -88,7 +88,6 @@ color:grey;
 font-family:sans-serif;
 position: absolute;
 top:100%;
-
 }
 
 .features {
