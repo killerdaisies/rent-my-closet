@@ -16,6 +16,7 @@
     "navigationBarTextStyle":"black"
   },
   "tabBar": {
+    "backgroundColor": "#ffffff",
     "list": [{
         "pagePath": "pages/index/index",
         "iconPath": "pages/images/heart.png",
