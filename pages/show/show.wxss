@@ -72,20 +72,22 @@
 }
 
 .avatar {
-  position: absolute;
-  right: 2px;
-  bottom: 104px;
+  position: relative;
+  left: 38%;
+  bottom: 10%;
   /* border: 1px dotted black; */
   padding: 5px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .avatar-name {
-  font-size: 11px;
-  color: grey ;
-  font-family: sans-serif;
-  /* display: block; */
-  position: relative;
-  left: 6px;
+font-size:11px;
+color:grey;
+font-family:sans-serif;
+position: absolute;
+top:100%;
 }
 
 .features {

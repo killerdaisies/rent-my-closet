@@ -2,7 +2,13 @@
 var app = getApp()
 Page({
   data: {
-    loading: false,
+    loading: false
+  },
+
+  bindtag: function(e) {
+    wx.redirectTo({
+      url: '/pages/landing/landing'
+    });
   },
 
   bindSubmit: function (e) {
@@ -32,22 +38,15 @@ Page({
       url: `http://localhost:3000/api/v1/items`,
       method: 'POST',
       data: item,
-      success() {
+
+      success: function(res) {
         // set data on index page and show
         console.log("he");
         wx.redirectTo({
-          url: '/pages/show/show'
+          url: '/pages/show/show?id=' + res.data.id
         });
       }
     });
-
-    // items.push(item);
-
-    // set data on index page and show
-    // wx.navigateTo({
-    //   url: '/pages/index/index'
-    // });
-
   },
 
   onLoad: function () {

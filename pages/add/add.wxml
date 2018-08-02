@@ -1,9 +1,11 @@
 <!--pages/add/add.wxml-->
 <template name="form">
 <view class="add-avatar">
-  <view class= "add-button"> Add a photo
-    <image class= "camera" src="../images/camera.png"></image>
-  </view>
+
+  <!-- <image class="userinfo-avatar" src= "../images/avatar.png"></image> -->
+    <view class= "add-button"> Add a photo
+      <image class= "camera" src="../images/camera.png"></image>
+    </view>
 </view>
   <form bindsubmit="bindSubmit">
     <view class="user-input">

@@ -3,7 +3,6 @@ const app = getApp()
 
 Page({
   onLoad: function (options) {
-
     let page = this;
     wx.request({
       url: "http://localhost:3000/api/v1/items",
@@ -21,9 +20,9 @@ Page({
   showItem(e) {
     const data = e.currentTarget.dataset;
     const item = data.item;
-
     wx.navigateTo({
       url: `../show/show?id=${item.id}`
     });
   }
 });
+
