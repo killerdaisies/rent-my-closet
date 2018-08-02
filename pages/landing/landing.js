@@ -8,7 +8,13 @@ Page({
 
   },
 
-  searchDress: function(category) {
+  search: function (string) {
+    wx.switchTab({
+      url: '/pages/index/index?category=' + string
+    })
+  },
+
+  searchDress: function (category) {
     console.log(category);
     wx.switchTab({
       url: '/pages/index/index?category=' + category

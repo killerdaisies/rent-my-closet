@@ -34,18 +34,11 @@
   height: 150rpx;
   width: 150rpx;
 }
-/*.screenshot {
-  background-size: cover !important;
-  height: 400px;
-  width: 90%;
-  margin-left: 22px;
+
+
+.search-bar {
+  border: solid grey;
+  border-radius: 5px;
+  height: 70rpx;
 }
 
-.searchbar {
-  background-size: cover !important;
-  height: 120px;
-  width: 275px;
-  margin-left: 55px;
-  margin-top: 20px;
-}
-*/

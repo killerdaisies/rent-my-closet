@@ -1,13 +1,7 @@
 <!--pages/landing/landing.wxml-->
-<view class="text-area-wrap">
-<textarea value="{{search}}" style="input-size"placeholder=" Search..." name="search" />
+<view class="search-bar">
+<input confirm-type="search" type="text" value="{{search}}" style="input-size"placeholder=" Search..." name="search" maxlength="-1" bindconfirm="search"/>
 </view>
-
-<!-- <view class= "searchbar" style="background-image: url('../images/searchbar.png');">
-</view>
-
-<view class= "screenshot" style="background-image: url('../images/screenshot.png');">
-</view> -->
 
 <view class="main-container">
   <view class="button">
