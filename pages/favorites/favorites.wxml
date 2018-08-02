@@ -1,23 +1,49 @@
 <!--pages/favorites/favorites.wxml-->
-<view class="page-container">
+<view class="search-container">
+  <image class="search" src= "../images/search.png"></image>
   <view class="search-bar">
     <input type="text" placeholder='Search'></input>
   </view>
 </view>
-<view wx:for="{{items}}" wx:for-item="item" wx:key="item.id" bindtap="showItem" class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('http://www.walldevil.com/wallpapers/a84/woman-dress.jpg'); "data-item= "{{item}}">
 
- <view class="card-category">
-   {{item.category}}
- </view>
+<swiper indicator-dots="{{indicatorDots}}" class='swiper'
+        autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="true"> 
+      <block wx:for="{{arr}}"> 
+        <swiper-item> 
+            <image src="{{item}}" class="slide-image" mode='widthFix'/> 
+        </swiper-item> 
+      </block> 
+</swiper>
+<view class="favorites-bar">
 
- <view class="card-mainInfo">
+<view class= "my-favourites">
+  <image class="heart-1" src="../images/hearts.png"></image>
+  <view>My Favourites</view>
+  <image class="heart-2" src="../images/hearts.png"></image>
+  </view>
+</view>
+<view class="page-container">
 
-   <view class="name">
-      {{item.name}}
-   </view>
-
-   <view class="price">
-      {{item.price}} RMB/DAY
-   </view>
- </view>
+<view class="rentals">
+  <view wx:for="{{items}}" wx:for-item="item" wx:key="item.id" bindtap="showItem" class="card-wrapper" data-item= "{{item}}">
+    <view class='card' style="background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.2)), url('http://image26.novashe.com/o_img/2017/07/10/229019-10340953/women-s-short-sleeve-a-line-midi-dress-with-belt.jpg'); ">
+  </view>
+    <view>
+      <view class="card-category">
+        {{item.category}} 
+      </view>
+      <view class="card-mainInfo">
+        <view class="name">
+          {{item.name}}
+        </view>
+        <view class="price">
+          {{item.price}} RMB
+        </view>
+        <view class="a-day">
+           /Per Day
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
 </view>
