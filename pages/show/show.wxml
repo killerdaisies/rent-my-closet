@@ -9,8 +9,7 @@
 <view class="card-container">
 <view class="title-card">
   <view class="title-text">
-  <!-- <text>{{name}}</text> -->
-   <text>Beautiful flower sundress</text>
+   <text>{{name}}</text>
   </view>
 </view>
   <view class="avatar">

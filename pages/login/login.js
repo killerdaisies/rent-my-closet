@@ -22,12 +22,12 @@ Page({
     var users = app.globalData.users
 
     wx.request({
-      url: `http://localhost:3000/api/v1/users`,
+      url: `https://rent-my-closet.herokuapp.com/api/v1/users`,
       method: 'POST',
       data: user,
       success() {
         console.log("he");
-        wx.redirectTo({
+        wx.reLaunch({
           url: '/pages/landing/landing',
         });
       }

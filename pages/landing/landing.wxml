@@ -26,19 +26,19 @@
 
 <view class="main-container-2">
   <view class="button">
-    <button bindtap="searchDress('maxi')" data-category="summer" hover-class="none" plain='true'>
+    <button bindtap="searchDress" data-category="summer" hover-class="none" plain='true'>
       <image class = "image" src="../images/dress_4.png"></image>
       <view class= "button-text"> Summer </view>
     </button>
   </view>
   <view class="button">
-    <button bindtap="searchDress('maxi')" data-category="casual" hover-class="none" plain='true'>
+    <button bindtap="searchDress" data-category="casual" hover-class="none" plain='true'>
       <image class = "image" src="../images/dress_5.png"></image>
       <view class= "button-text"> Casual </view>
     </button>
   </view>
   <view class="button">
-    <button bindtap="searchDress('maxi')" data-category="social" hover-class="none" plain='true'>
+    <button bindtap="searchDress" data-category="social" hover-class="none" plain='true'>
       <image class = "image" src="../images/dress_6.png"></image>
       <view class= "button-text"> Social </view>
     </button>

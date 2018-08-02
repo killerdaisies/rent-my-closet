@@ -4,7 +4,7 @@ Page({
     let that = this;
 
     wx.request({
-      url: `http://localhost:3000/api/v1/items/${options.id}`,
+      url: `https://rent-my-closet.herokuapp.com/api/v1/items/${options.id}`,
       method: 'GET',
       success(res) {
         const item = res.data;
