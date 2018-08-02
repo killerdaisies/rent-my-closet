@@ -25,7 +25,7 @@
 .textarea {
   padding: 10rpx 0;
   font-size: 35rpx;
-  font-color: white;
+  font-color: grey;
   width: 100%;
 }
 .text-area-wrap {
@@ -43,7 +43,7 @@
 .text-area-wrap{
   position: relative;
   font-size: 20px;
-  color: white;
+  color: grey;
   text-shadow: 0 1px 3px rgba(0,0,0,0.6);
   background-color: #F5F3F3;
   opacity: 0.7;
@@ -53,6 +53,7 @@
 }
 
 .add-avatar {
+  width: 100%;
   background-color: grey;
   height: 250px;
 }
@@ -64,10 +65,9 @@
   border: solid 1px;
   border-radius: 50px;
   opacity: .9;
-  left: 28%;
   top: 40%;
   position: relative;
-  width: 38%;
+  width: 50%;
 }
 
 .camera {
@@ -77,4 +77,5 @@
   left: 5px;
   position: relative;
 }
+
 
