@@ -5,7 +5,7 @@ Page({
   onLoad: function (options) {
     let page = this;
     wx.request({
-      url: `http://localhost:3000/api/v1/users/27`,
+      url: `http://localhost:3000/api/v1/users/6`,
       method: 'GET',
       success(res) {
         const user = res.data;
