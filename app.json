@@ -18,7 +18,7 @@
   "tabBar": {
     "backgroundColor": "#ffffff",
     "list": [{
-        "pagePath": "pages/index/index",
+        "pagePath": "pages/favorites/favorites",
         "iconPath": "pages/images/heart.png",
         "selectedIconPath": "pages/images/heart.png"
       },
