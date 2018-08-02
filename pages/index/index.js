@@ -3,10 +3,10 @@ const app = getApp()
 
 Page({
   onLoad: function (options) {
+    console.log(options, 182774)
     let page = this;
     wx.request({
-      // url: "http://localhost:3000/api/v1/items",
-      url: "https://rent-my-closet.herokuapp.com/api/v1/items",
+      url: `https://rent-my-closet.herokuapp.com/api/v1/items?query=${options.query}`,
       method: 'GET',
       success(res) {
         const items = res.data.items;
@@ -16,6 +16,7 @@ Page({
         wx.hideToast();
       }
     });
+    console.log(12, options.query)
     this.setData(app.globalData)
   },
   showItem(e) {

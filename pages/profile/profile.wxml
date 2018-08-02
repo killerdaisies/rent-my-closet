@@ -2,12 +2,14 @@
 <view>
   <view class='profile'>
     <view>
-      <view  wx:for-item="user" wx:key="user.id" bindtap="showUsard-wrapper" data-item= "{{user}}">
-        <image class="avatar-image" src= "{{user.avatarUrl}}"></image>
+      <view class='profile-box' wx:for-item="user" wx:key="user.id" bindtap="showUsard-wrapper" data-item= "{{user}}">
+        <image class="avatar-image" src= "../images/Victoria.jpeg"></image>
         <view class= "name"> {{user.wechat_name}} </view>
-        <view class= "edit-button"> Edit Profile </view>
-        <view class="description">
-          {{user.description}}
+        <!-- <view class= "edit-button"> Edit Profile </view> -->
+        <view class="description-box">
+          <view class="description">
+            {{user.description}}
+          </view>
         </view>
       </view>
     </view>
@@ -17,7 +19,8 @@
   <view class="rentals">
     <view class= "my-rentals"> My Rentals
     </view>
-    <view wx:for="{{items}}" wx:for-item="item" wx:key="item.id" bindtap="showItem" class="card-wrapper" data-item= "{{item}}">
+    <!-- <view wx:for="{{items}}" wx:for-item="item" wx:key="item.id" bindtap="showItem" class="card-wrapper" data-item= "{{item}}"> -->
+    <view class="card-wrapper">
       <view class='card' style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('http://image26.novashe.com/o_img/2017/07/10/229019-10340953/women-s-short-sleeve-a-line-midi-dress-with-belt.jpg'); "></view>
       <view>
         <view class="card-category">
@@ -41,17 +44,27 @@
 
 <view>
   <view class="rented">
-    <view class= "my-rented"> My Rented </view>
-      <view class="card-category">
-          {{rented.name}}
+    <view class= "my-rented"> Items Rented Out
+    </view>
+    <!-- <view wx:for="{{items}}" wx:for-item="item" wx:key="item.id" bindtap="showItem" class="card-wrapper" data-item= "{{item}}"> -->
+    <view class="card-wrapper">
+      <view class='card' style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('http://image26.novashe.com/o_img/2017/07/10/229019-10340953/women-s-short-sleeve-a-line-midi-dress-with-belt.jpg'); "></view>
+      <view>
+        <view class="card-category">
+          {{item.category}} 
         </view>
-        <view class="card-description">
+        <view class="card-mainInfo">
+          <view class="name">
+            {{item.name}}
+          </view>
           <view class="price">
-            {{rented.price}}
+              {{item.price}} RMB/Day
           </view>
-          <view class="tag">
-            {{rented.description}}
+          <view class="a-day">
+              Per Day
           </view>
         </view>
+      </view>
+    </view>
   </view>
 </view>

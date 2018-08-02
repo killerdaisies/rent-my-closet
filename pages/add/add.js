@@ -42,7 +42,7 @@ Page({
       success: function(res) {
         // set data on index page and show
         console.log("he");
-        wx.redirectTo({
+        wx.navigateTo({
           url: '/pages/show/show?id=' + res.data.id
         });
       }
