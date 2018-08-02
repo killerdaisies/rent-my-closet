@@ -35,7 +35,7 @@ Page({
     }
 
     wx.request({
-      url: `http://localhost:3000/api/v1/items`,
+      url: `https://rent-my-closet.herokuapp.com/api/v1/items`,
       method: 'POST',
       data: item,
 
