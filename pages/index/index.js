@@ -3,6 +3,7 @@ const app = getApp()
 
 Page({
   onLoad: function (options) {
+
     let page = this;
     wx.request({
       url: "http://localhost:3000/api/v1/items",

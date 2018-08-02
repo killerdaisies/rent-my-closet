@@ -17,14 +17,14 @@
   <view class="rentals">
     <view class= "my-rentals"> My Rentals </view>
         <view class="card-category">
-          {{dress.name}}
+          {{rental.name}}
         </view>
         <view class="card-description">
           <view class="price">
-            {{dress.price}}
+            {{rental.price}}
           </view>
           <view class="tag">
-            {{dress.description}}
+            {{rental.description}}
           </view>
         </view>
   </view>
@@ -33,5 +33,16 @@
 <view>
   <view class="rented">
     <view class= "my-rented"> My Rented </view>
+      <view class="card-category">
+          {{rented.name}}
+        </view>
+        <view class="card-description">
+          <view class="price">
+            {{rented.price}}
+          </view>
+          <view class="tag">
+            {{rented.description}}
+          </view>
+        </view>
   </view>
 </view>

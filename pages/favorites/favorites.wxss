@@ -1,1 +1,7 @@
 /* pages/favorites/favorites.wxss */
+.page-container {
+  height: 40px;
+  padding: 10px
+  border: solid red;
+  border-radius: 50px;
+}
