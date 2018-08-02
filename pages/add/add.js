@@ -5,6 +5,12 @@ Page({
     loading: false
   },
 
+  bindtag: function(e) {
+    wx.redirectTo({
+      url: '/pages/landing/landing'
+    });
+  },
+
   bindSubmit: function (e) {
     console.log(23, e)
     this.setData({

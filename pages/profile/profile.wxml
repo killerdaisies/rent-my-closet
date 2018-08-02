@@ -2,17 +2,17 @@
 <view>
   <view class='profile'>
     <view>
-      <image class="avatar-image" src= "../images/jane.png"></image>
-      <view class= "name"> Jane Gong </view>
-      <view class= "wechat-id">Wechat ID: killerdaises </view>
-      <view class= "edit-button"> Edit Profile </view>
-      <view class="description">
-        A dance loving affecionado suffering from chronic wanderlust only to find solace in social entrepreneurship. Singapore for life!
+      <view  wx:for-item="user" wx:key="user.id" bindtap="showUsard-wrapper" data-item= "{{user}}">
+        <image class="avatar-image" src= "{{user.avatarUrl}}"></image>
+        <view class= "name"> {{user.wechat_name}} </view>
+        <view class= "edit-button"> Edit Profile </view>
+        <view class="description">
+          {{user.description}}
+        </view>
       </view>
     </view>
   </view>
 </view>
-
 <view>
   <view class="rentals">
     <view class= "my-rentals"> My Rentals </view>
