@@ -1,6 +1,11 @@
 // pages/profile/profile.js
 const app = getApp()
 Page({
+  data: {
+    item card-category: '',
+    item
+    endDate: ''
+  },
 
   onLoad: function (options) {
     let page = this;
@@ -22,5 +27,5 @@ Page({
     const data = e.currentTarget.dataset;
     const user = data.user;
   }
-  
+
 })
