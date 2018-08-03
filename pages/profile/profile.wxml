@@ -3,7 +3,7 @@
   <view class='profile'>
     <view>
       <view class='profile-box' wx:for-item="user" wx:key="user.id" bindtap="showUsard-wrapper" data-item= "{{user}}">
-        <image class="avatar-image" src= "../images/Victoria.jpeg"></image>
+        <image class="avatar-image" src= "{{user.avatarUrl}}"></image>
         <view class= "name"> {{user.wechat_name}} </view>
         <!-- <view class= "edit-button"> Edit Profile </view> -->
         <view class="description-box">
