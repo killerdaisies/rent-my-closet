@@ -4,7 +4,7 @@ Page({
   data: {
     loading: false,
     index: 0,
-    categories: [{ "id": 13, "name": "Cam Neely", "description": "You are in luck! There's a town about three miles that way. I'm sure you'll find a couple guys there. Okay, thanks. Do you realize what you've done?", "price": "196", "category": "cocktail", "availability": true }, { "id": 14, "name": "Karen Duffy", "description": "We got no food, we got no jobs... our PETS' HEADS ARE FALLING OFF!", "price": "212", "category": "formal", "availability": false }, { "id": 15, "name": "Cam Neely", "description": "Skis, huh? That's right! Great! They yours? Uh-huh. Both of 'em? Yes. Cool!", "price": "512", "category": "cocktail", "availability": false }, { "id": 16, "name": "Charles Rocket", "description": "Oh, yeah! It's right here. Samsonite! I was way off! I knew it started with an S, though.", "price": "714", "category": "summer", "availability": false }, { "id": 17, "name": "this is bad ", "description": "very bad", "price": "100", "category": "djsk", "availability": false }]
+    categories: ["Maxi","What","hello"]
   },
 
   bindtag: function(e) {
@@ -54,21 +54,21 @@ Page({
   onLoad: function () {
     console.log("page loaded");
     let page = this;
-    wx.request({
-      url: "https://rent-my-closet.herokuapp.com/api/v1/items",
-      method: 'GET',
-      success(net) {
-        const items = net.data.items;
-        console.log(33, items);
+    // wx.request({
+    //   url: "https://rent-my-closet.herokuapp.com/api/v1/items",
+    //   method: 'GET',
+    //   success(net) {
+    //     const items = net.data.items;
+    //     console.log(33, items);
 
-        // Update local data
-        // page.setData({
-        //   categories: items
-        // });
+    //     Update local data
+    //     page.setData({
+    //       categories: items
+    //     });
 
-        wx.hideToast();
-      }
-    });
+    //     wx.hideToast();
+    //   }
+    // });
   },
   // takePhoto: function () {
   //   let that = this

@@ -44,11 +44,12 @@
     <view class="user-input">
       <view class="text-area-wrap">
 <!--       <textarea value="{{category}}" style="input-size"placeholder="Category" class="input-height" name="category" maxlength="-1" auto-height /> -->
-      <picker mode="selector" value="{{index}}" range="{{categories}}" range-key="name">
-        <view class="picker">
-          Categories {{categories[index]}}
-        </view>
-      </picker>
+      <picker mode="selector" range="{{categories}}" value="{{index}}">
+  <view class="picker">
+       categories: {{categories[index]}}
+  </view>
+</picker>
+
       </view>
     </view>
 

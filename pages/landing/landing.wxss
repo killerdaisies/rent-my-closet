@@ -40,5 +40,21 @@
   border: solid grey;
   border-radius: 5px;
   height: 70rpx;
+  width: 90%;
 }
 
+.search-container {
+  padding: 0px 0px 7px 12px;
+  border-bottom: 1px solid lightgrey;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.search {
+  position: absolute;
+  left: 5%;
+  bottom: 40%;
+  height: 16px;
+  width: 16px;
+}
