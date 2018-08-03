@@ -1,9 +1,9 @@
 <!--pages/landing/landing.wxml-->
 <!-- <image class = "background" src="../images/Victoria.jpeg"></image> -->
 
-<!-- <view class="search-bar">
+<view class="search-bar">
 <input confirm-type="search" type="text" value="{{search}}" style="input-size"placeholder=" Search..." name="search" maxlength="-1" bindconfirm="search"/>
-</view> -->
+</view>
 <view class="button-organizer">
 <view class="main-container">
   <view class="button">
