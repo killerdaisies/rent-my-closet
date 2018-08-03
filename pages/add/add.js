@@ -23,6 +23,8 @@ Page({
       loading: !this.data.loading
     });
 
+    console.log(e)
+
     var name = e.detail.value.name
     var description = e.detail.value.description;
     var price = e.detail.value.price;
@@ -48,6 +50,7 @@ Page({
       success: function(res) {
         // set data on index page and show
         console.log("he");
+        console.log(res);
         wx.navigateTo({
           url: '/pages/editshow/editshow?id=' + res.data.id
         });

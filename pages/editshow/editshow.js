@@ -17,7 +17,21 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
+    let that = this;
+    console.log(223, options)
+    wx.request({
+      url: `https://rent-my-closet.herokuapp.com/api/v1/items/${options.id}`,
+      method: 'GET',
+      success(res) {
+        const item = res.data;
+
+        that.setData(
+          item
+        );
+
+        wx.hideToast();
+      }
+    });
   },
 
   /**
