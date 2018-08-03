@@ -25,15 +25,22 @@ Page({
   reserveTap: function() {
     let startDate = this.data.startDate
     let endDate = this.data.endDate
+
+    console.log(app.globalData.userInfo);
     wx.showModal({
       content: 'Would you like to confirm this reservation?',
       confirmText: "Confirm",
       cancelText: "Not now",
       success: function (res) {
         if (res.confirm) {
-        wx.reLaunch({
-          url: '../../pages/profile/profile'
-        });
+          wx.request({
+            url: 'http://localhost:3000/api/v1/bookings',
+            method: 'POST',
+            data: {
+              start_date: startDate,
+              end_date: endDate
+            }
+          })
         } else {
           console.log("Staying on page")
         }
@@ -44,7 +51,10 @@ Page({
   //   console.log("bindDateChange1: ", event.detail.value)
   // },
 
-  // bindDateChange2: function (event) {
-  //   console.log("bindDateChange2: ", event)
-  // }
+  bindDateChange2: function (event) {
+    console.log("bindDateChange2: ", event.detail.value)
+    this.setData({
+      endDate: event.detail.value
+    })
+  }
 });
