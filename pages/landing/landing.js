@@ -5,7 +5,14 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+      mode: "scaleToFill",
+      arr: ['../images/victoriaboat.jpg',
+        '../images/Angela.jpg',
+        '../images/mimi.jpg'],
+      indicatorDots: true,
+      autoplay: true,
+      interval: 2000,
+      duration: 1000,
   },
   search: function (e) {
     let input = e.detail.value
