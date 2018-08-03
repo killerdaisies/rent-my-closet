@@ -26,7 +26,7 @@ Page({
     let startDate = this.data.startDate
     let endDate = this.data.endDate
 
-    console.log(app.globalData.userInfo);
+    // console.log(app.globalData.userInfo);
     wx.showModal({
       content: 'Would you like to confirm this reservation?',
       confirmText: "Confirm",
@@ -40,7 +40,10 @@ Page({
               start_date: startDate,
               end_date: endDate
             }
-          })
+          });
+          wx.reLaunch({
+            url: '/pages/profile/profile'
+          });
         } else {
           console.log("Staying on page")
         }

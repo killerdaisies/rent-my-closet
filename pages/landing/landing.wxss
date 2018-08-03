@@ -42,10 +42,9 @@
 }
 
 .image{
-  height: 150rpx;
-  width: 150rpx;
+  height: 130rpx;
+  width: 130rpx;
 }
-
 
 .search-bar {
   border: 1px solid white;
