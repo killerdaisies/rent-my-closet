@@ -5,7 +5,7 @@ Page({
   onLoad: function (options) {
     let page = this;
     wx.request({
-      url: 'https://rent-my-closet.herokuapp.com/api/v1/users/17',
+      url: 'https://rent-my-closet.herokuapp.com/api/v1/users/37',
       method: 'GET',
       success(res) {
         const user = res.data;

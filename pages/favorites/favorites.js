@@ -94,6 +94,20 @@ Page({
     });
     this.setData(app.globalData)
   },
+
+  search: function (e) {
+    let input = e.detail.value
+    console.log(input)
+    wx.request({
+      url: `https://rent-my-closet.herokuapp.com/api/v1/items?query=${input}`,
+      method: 'GET',
+
+    })
+    wx.navigateTo({
+      url: `../index/index?query=${input}`,
+    })
+  },
+
   showItem(e) {
     const data = e.currentTarget.dataset;
     const item = data.item;

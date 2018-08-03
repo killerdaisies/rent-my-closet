@@ -55,7 +55,7 @@
     <text class="labels">Category</text>
     <view class="user-input">
       <view class="text-area-wrap">
-        <textarea value="{{category}}" style="input-size"placeholder="Category" class="input-height" name="category" maxlength="-1" auto-height />
+        <textarea value="{{category}}" style="input-size" class="input-height" name="category" maxlength="-1" auto-height />
       </view>
     </view>
     

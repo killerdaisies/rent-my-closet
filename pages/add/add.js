@@ -37,7 +37,7 @@ Page({
       "price": price,
       "sizing": sizing,
       "category": category,
-      "user_id": 27
+      "user_id": 37
     }
 
     wx.request({
@@ -49,7 +49,7 @@ Page({
         // set data on index page and show
         console.log("he");
         wx.navigateTo({
-          url: '/pages/show/show?id=' + res.data.id
+          url: '/pages/editshow/editshow?id=' + res.data.id
         });
       }
     });
