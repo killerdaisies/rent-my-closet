@@ -15,14 +15,14 @@ Page({
       method: 'GET',
 
     })
-    wx.reLaunch({
+    wx.navigateTo({
       url: `../index/index?query=${input}`,
     })
   },
 
   searchDress: function (e) {
     let category= e.target.dataset.category
-    wx.reLaunch({
+    wx.navigateTo({
       url: `../index/index?query=${category}`,
     })
   },
