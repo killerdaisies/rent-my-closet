@@ -1,1 +1,7 @@
 /* pages/splash/splash.wxss */
+
+.userinfo-avatar {
+  border-radius: 50%;
+  width: 300rpx;
+  height: 300rpx;
+}

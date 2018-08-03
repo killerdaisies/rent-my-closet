@@ -49,22 +49,22 @@
   <view class="text-area">
   </view>
 </view>
-<!-- 
-<view class="section"> -->
+
+<view class="section">
   <!-- <view class="section__title">Start date </view> -->
-  <!-- <picker mode="date" value="{{date}}" start="2018-09-01" end="2030-09-01" bindchange="bindDateChange1">
+ <picker mode="date" value="{{date}}" start="2018-09-01" end="2030-09-01" bindchange="bindDateChange1">
     <view class="picker">
       Start Date   {{startDate}} 
     </view>
   </picker>
 </view>
-<view class="section"> -->
-  <!-- <view class="section__title">End date </view> -->
-  <!-- <picker mode="date" value="{{date}}" start="2018-09-01" end="2030-09-01" bindchange="bindDateChange2">
+<view class="section">
+  <!-- <view class="section__title">End date </view>  -->
+   <picker mode="date" value="{{date}}" start="2018-09-01" end="2030-09-01" bindchange="bindDateChange2">
     <view class="picker">
       End Date   {{endDate}}
     </view>
   </picker>
-</view> -->
+</view> 
 
     <button  style=" margin-top:20px margin-bottom:50px "type="primary" form-type="submit" loading="{{loading}}" bindtap="reserveTap">Reserve</button>
