@@ -8,37 +8,49 @@
     </view>
 </view>
   <form bindsubmit="bindSubmit">
+  <view class= "rent">
+    <view>Rent Out Your Dress</view>
+  </view>
+  <view class="trial">
     <view class="user-input">
+      <text class="labels">Name</text>
       <view class="text-area-wrap">
-      <textarea value="{{name}}" style="input-size"placeholder="Name" class="input-height" name="name" maxlength="-1" auto-height />
+      <textarea value="{{name}}" style="input-size" class="input-height" name="name" maxlength="-1" auto-height />
       </view>
     </view>
-
+  <view class="trial">
     <view class="user-input">
+    <text class="labels">Description</text>
       <view class="text-area-wrap">
-      <textarea value="{{description}}" style="input-size"placeholder="Description" class="input-height" name="description" maxlength="-1" auto-height />
+      <textarea value="{{description}}" style="input-size" class="input-height" name="description" maxlength="-1" auto-height />
       </view>
     </view>
+  </view>
 
+  <view class="trial">
     <view class="user-input">
+    <text class="labels">Price</text>
       <view class="text-area-wrap">
-      <textarea value="{{price}}" style="input-size"placeholder="Price" class="input-height" name="price" maxlength="-1" auto-height />
+      <textarea value="{{price}}" style="input-size" class="input-height" name="price" maxlength="-1" auto-height />
       </view>
     </view>
+  </view>
 
+    <text class="labels">Size</text>
     <view class="user-input">
       <view class="text-area-wrap">
-      <textarea value="{{sizing}}" style="input-size"placeholder="Size" class="input-height" name="size" maxlength="-1" auto-height />
+      <textarea value="{{sizing}}" style="input-size" class="input-height" name="size" maxlength="-1" auto-height />
       </view>
     </view>
-
+  
+    <text class="labels">Category</text>
     <view class="user-input">
       <view class="text-area-wrap">
-      <textarea value="{{category}}" style="input-size"placeholder="Category" class="input-height" name="category" maxlength="-1" auto-height />
+      <textarea value="{{category}}" style="input-size" class="input-height" name="category" maxlength="-1" auto-height />
       </view>
     </view>
-
-    <button  style=" margin-top:20px margin-bottom:50px "type="primary" form-type="submit" loading="{{loading}}">Submit</button>
+  </view>
+    <button  style="margin-top:55rpx; padding-bottom:1rpx; width:95%" type="warning" form-type="submit" loading="{{loading}}">Submit</button>
     </form>
 </template>
 
