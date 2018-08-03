@@ -1,0 +1,55 @@
+<!-- pages/editshow/show.wxml -->
+<view class="page-container">
+  <image class="main-image" src="../images/avatar.png"></image>
+  <view class="price-box">
+    <text>¥{{price}}/Day</text>
+  </view>
+</view>
+
+<view class="card-container">
+<view class="title-card">
+  <view class="title-text">
+  <!-- <text>{{name}}</text> -->
+   <text>Beautiful flower sundress</text>
+  </view>
+</view>
+  <view class="avatar">
+    <image class="avatar-image" src="../images/victoria.jpeg"></image>
+    <view class="avatar-name">
+      <text>Vivian Wu</text>
+    </view>
+  </view>
+</view>
+
+
+<view class= "description-box">
+  <view class="description">
+    <text>{{description}}</text>
+    <text>My HEIGHT: 168 cm</text>
+  </view>
+</view>
+
+<view class="features">
+  <view class="avaliability">
+  <text>Avaliability</text>
+  </view>
+  <view class="calendar-box" >
+    <image class="calendar" src="../images/calendar.png"></image>
+  </view>
+</view>
+
+<view class="end-input">
+<view class = "details">
+  <view class="label">Category</view>
+  <view class="text-area">
+  </view>
+</view>
+
+<view class="details">
+  <view class="label"> Size </view>
+  <view class="text-area">
+  </view>
+</view>
+</view>
+
+    <button  style=" margin-top:20px margin-bottom:50px "type="warning" form-type="submit" loading="{{loading}}">Rent Out</button>
