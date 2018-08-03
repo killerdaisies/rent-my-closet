@@ -1,5 +1,9 @@
 var app = getApp()
 Page({
+  data: {
+    startDate: '',
+    endDate: ''
+  },
   onLoad: function (options) {
     let that = this;
     console.log(223,options)
@@ -19,6 +23,8 @@ Page({
   },
 
   reserveTap: function() {
+    let startDate = this.data.startDate
+    let endDate = this.data.endDate
     wx.showModal({
       content: 'Would you like to confirm this reservation?',
       confirmText: "Confirm",
@@ -34,7 +40,6 @@ Page({
       }
     })
   },
-
   // bindDateChange1: function(event) {
   //   console.log("bindDateChange1: ", event.detail.value)
   // },

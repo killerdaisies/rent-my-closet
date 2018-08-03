@@ -1,4 +1,4 @@
-<!--pages/show/show.wxml-->
+<!-- pages/editshow/show.wxml -->
 <view class="page-container">
   <image class="main-image" src="../images/avatar.png"></image>
   <view class="price-box">
@@ -9,7 +9,8 @@
 <view class="card-container">
 <view class="title-card">
   <view class="title-text">
-   <text>{{name}}</text>
+  <!-- <text>{{name}}</text> -->
+   <text>Beautiful flower sundress</text>
   </view>
 </view>
   <view class="avatar">
@@ -18,15 +19,14 @@
       <text>Vivian Wu</text>
     </view>
   </view>
+</view>
 
-  
+
 <view class= "description-box">
   <view class="description">
     <text>{{description}}</text>
     <text>My HEIGHT: 168 cm</text>
   </view>
-</view>
-
 </view>
 
 <view class="features">
@@ -38,33 +38,18 @@
   </view>
 </view>
 
-<view>
+<view class="end-input">
+<view class = "details">
   <view class="label">Category</view>
   <view class="text-area">
   </view>
 </view>
 
-<view>
+<view class="details">
   <view class="label"> Size </view>
   <view class="text-area">
   </view>
 </view>
-<!-- 
-<view class="section"> -->
-  <!-- <view class="section__title">Start date </view> -->
-  <!-- <picker mode="date" value="{{date}}" start="2018-09-01" end="2030-09-01" bindchange="bindDateChange1">
-    <view class="picker">
-      Start Date   {{startDate}} 
-    </view>
-  </picker>
 </view>
-<view class="section"> -->
-  <!-- <view class="section__title">End date </view> -->
-  <!-- <picker mode="date" value="{{date}}" start="2018-09-01" end="2030-09-01" bindchange="bindDateChange2">
-    <view class="picker">
-      End Date   {{endDate}}
-    </view>
-  </picker>
-</view> -->
 
-    <button  style=" margin-top:20px margin-bottom:50px "type="primary" form-type="submit" loading="{{loading}}" bindtap="reserveTap">Reserve</button>
+    <button  style=" margin-top:20px margin-bottom:50px "type="warning" form-type="submit" loading="{{loading}}">Rent Out</button>
