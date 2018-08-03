@@ -38,13 +38,13 @@
 </view>
 
 <view>
-  <view class="label">Category</view>
+  <view class="label">Category: {{category}}</view>
   <view class="text-area">
   </view>
 </view>
 
 <view>
-  <view class="label"> Size </view>
+  <view class="label"> Size: {{sizing}} </view>
   <view class="text-area">
   </view>
 </view>
