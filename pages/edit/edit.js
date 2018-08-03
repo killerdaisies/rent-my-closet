@@ -10,7 +10,7 @@ Page({
     });
 
     wx.request({
-      url: `http://localhost:3000/api/v1/items/${options.id}`,
+      url: `https://rent-my-closet.herokuapp.com/api/v1/items/${options.id}`,
       method: 'GET',
       success(res) {
         var item = res.data;
@@ -44,7 +44,8 @@ Page({
 
       // Update api data
     wx.request({
-      url: `http://localhost:3000/api/v1/items/${id}`,
+      // url: `http://localhost:3000/api/v1/items/${id}`,
+      url: `https://rent-my-closet.herokuapp.com/api/v1/items/${id}`,
       method: 'PUT',
       data: item,
       success() {

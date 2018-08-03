@@ -82,7 +82,7 @@ Page({
   onLoad: function (options) {
     let page = this;
     wx.request({
-      url: "http://localhost:3000/api/v1/items",
+      url: "https://rent-my-closet.herokuapp.com/api/v1/items",
       method: 'GET',
       success(res) {
         const items = res.data.items;
@@ -94,6 +94,20 @@ Page({
     });
     this.setData(app.globalData)
   },
+
+  search: function (e) {
+    let input = e.detail.value
+    console.log(input)
+    wx.request({
+      url: `https://rent-my-closet.herokuapp.com/api/v1/items?query=${input}`,
+      method: 'GET',
+
+    })
+    wx.navigateTo({
+      url: `../index/index?query=${input}`,
+    })
+  },
+
   showItem(e) {
     const data = e.currentTarget.dataset;
     const item = data.item;

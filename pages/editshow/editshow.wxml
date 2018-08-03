@@ -25,7 +25,6 @@
 <view class= "description-box">
   <view class="description">
     <text>{{description}}</text>
-    <text>My HEIGHT: 168 cm</text>
   </view>
 </view>
 
@@ -52,4 +51,4 @@
 </view>
 </view>
 
-    <button  style=" margin-top:20px margin-bottom:50px "type="warning" form-type="submit" loading="{{loading}}">Rent Out</button>
+    <button bindtap="bindRedirect" style=" margin-top:20px margin-bottom:50px "type="warn" form-type="submit" loading="{{loading}}">Rent Out</button>

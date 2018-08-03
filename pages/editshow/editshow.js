@@ -7,7 +7,12 @@ Page({
   data: {
   
   },
-
+  
+  bindRedirect: function(e){
+    wx.reLaunch({
+      url: '../profile/profile',
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */

@@ -2,8 +2,6 @@
 App({
   onLaunch: function () {
     const host = 'https://rent-my-closet.herokuapp.com/'
-    // const host = "http://localhost:3000/"
-    // const host = 'https://localhost.3000(what is your address)/'
     wx.login({
       success: (res) => {
         console.log(res)

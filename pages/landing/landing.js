@@ -14,19 +14,32 @@ Page({
       interval: 2000,
       duration: 1000,
   },
+  search: function (e) {
+    let input = e.detail.value
+    console.log(input)
+    wx.request({
+      url: `https://rent-my-closet.herokuapp.com/api/v1/items?query=${input}`,
+      method: 'GET',
 
-  search: function (string) {
-    wx.switchTab({
-      url: '/pages/index/index?category=' + string
+    })
+    wx.navigateTo({
+      url: `../index/index?query=${input}`,
     })
   },
 
-  searchDress: function (category) {
-    console.log(category);
-    wx.switchTab({
-      url: '/pages/index/index?category=' + category
+  searchDress: function (e) {
+    let category= e.target.dataset.category
+    wx.navigateTo({
+      url: `../index/index?query=${category}`,
     })
   },
+
+  // searchDress: function (category) {
+  //   console.log(category);
+  //   wx.switchTab({
+  //     url: '/pages/index/index?category=' + `${category}`
+  //   })
+  // },
 
   /**
    * 生命周期函数--监听页面加载

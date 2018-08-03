@@ -31,7 +31,7 @@
             {{item.name}}
           </view>
           <view class="price">
-              {{item.price}} RMB/Day
+              {{item.price}} RMB
           </view>
           <view class="a-day">
               Per Day

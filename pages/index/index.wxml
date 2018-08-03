@@ -1,17 +1,16 @@
 <view class="search-container">
   <image class="search" src= "../images/search.png"></image>
   <view class="search-bar">
-    <input type="text" placeholder='Search'></input>
+    <input bindconfirm="search" confirm-type="search" type="text" placeholder='Search'></input>
   </view>
 </view>
-
 
 <view class="page-container">
   <view wx:for="{{items}}" wx:for-item="item" wx:key="item.id"  bindtap="showItem"       class="card-wrapper" data-item= "{{item}}">
   <view class='card' style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('http://image26.novashe.com/o_img/2017/07/10/229019-10340953/women-s-short-sleeve-a-line-midi-dress-with-belt.jpg'); "></view>
 <view >
  <view class="card-category">
-   {{item.category}} 
+   {{item.category}}
  </view> 
 
  <view class="card-mainInfo">
