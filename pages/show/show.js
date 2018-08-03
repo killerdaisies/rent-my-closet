@@ -4,7 +4,7 @@ Page({
     let that = this;
 
     wx.request({
-      url: `http://localhost:3000/api/v1/items/${options.id}`,
+      url: `https://rent-my-closet.herokuapp.com/api/v1/items/${options.id}`,
       method: 'GET',
       success(res) {
         const item = res.data;
@@ -16,5 +16,31 @@ Page({
         wx.hideToast();
       }
     });
+  },
+
+  reserveTap: function() {
+    wx.showModal({
+      // title: 'Would you like to confirm this reservation?',
+      content: 'Would you like to confirm this reservation?',
+      confirmText: "Confirm",
+      cancelText: "Not now",
+      success: function (res) {
+        if (res.confirm) {
+        wx.reLaunch({
+          url: '../../pages/profile/profile'
+        });
+        } else {
+          console.log("Staying on page")
+        }
+      }
+    })
+  },
+
+  bindDateChange1: function(event) {
+    console.log("bindDateChange1: ", event.detail.value)
+  },
+
+  bindDateChange2: function (event) {
+    console.log("bindDateChange2: ", event)
   }
 });

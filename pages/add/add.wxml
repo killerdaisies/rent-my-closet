@@ -1,12 +1,21 @@
 <!--pages/add/add.wxml-->
-<template name="form">
-<view class="add-avatar">
+ <!--  <image bindtap="takePhoto" style="height: 60px; width: 100px; background-image: url('../images/camera.png'); background-size:fill; background-repeat: no-repeat;" mode="widthFix">
+  </image> -->
 
-  <!-- <image class="userinfo-avatar" src= "../images/avatar.png"></image> -->
-    <view class= "add-button"> Add a photo
-      <image class= "camera" src="../images/camera.png"></image>
+ <!--  <image style="background-image: url('{{photo}}'); width: 150px; height: 190px; background-repeat: no-repeat; background-size: cover;">
+  </image> -->
+
+  <view style="margin-bottom:50px"type="primary" loading="{{loading}}">
+    <view class="add-avatar">
+      <button class= "add-button" bindtap="pickImage"> Add a photo
+        <image class= "camera" src="../images/camera.png"></image>
+      </button>
     </view>
-</view>
+  </view>
+
+
+<template name="form">
+
   <form bindsubmit="bindSubmit">
   <view class= "rent">
     <view>Rent Out Your Dress</view>
@@ -46,9 +55,15 @@
     <text class="labels">Category</text>
     <view class="user-input">
       <view class="text-area-wrap">
-      <textarea value="{{category}}" style="input-size" class="input-height" name="category" maxlength="-1" auto-height />
+        <textarea value="{{category}}" style="input-size"placeholder="Category" class="input-height" name="category" maxlength="-1" auto-height /> -->
+        <picker mode="selector" value="{{index}}" range="{{categories}}" range-key="name">
+          <view class="picker">
+            Categories {{categories[index]}}
+          </view>
+        </picker>
       </view>
     </view>
+    
   </view>
     <button  style="margin-top:55rpx; padding-bottom:1rpx; width:95%" type="warning" form-type="submit" loading="{{loading}}">Submit</button>
     </form>
